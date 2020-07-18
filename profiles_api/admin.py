@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import UserProfile
+from profiles_api.models import UserProfile,ProfileFeedItem
 
 
 # Register your models here.
@@ -8,3 +8,4 @@ class UserAdmin(admin.ModelAdmin):
 
 
 admin.site.register(UserProfile,UserAdmin)
+admin.site.register(ProfileFeedItem)
